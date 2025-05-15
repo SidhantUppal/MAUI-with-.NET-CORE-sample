@@ -44,6 +44,7 @@ Backend: ASP.NET Core Web API (optional backend for data storage and APIs)
 Database: SQLite / SQL Server
 
 Authentication: Role-based access handling in-app (JWT/Identity can be added)
+
 <img width="248" alt="image" src="https://github.com/user-attachments/assets/cae84946-edd3-4447-bf82-def536f53dfb" />
 <img width="248" alt="image" src="https://github.com/user-attachments/assets/0cd75a61-eef4-41a9-9911-c97e433d2d14" />
 <img width="245" alt="image" src="https://github.com/user-attachments/assets/18b3433b-3bbd-425a-b68c-c3803ffddf28" />
