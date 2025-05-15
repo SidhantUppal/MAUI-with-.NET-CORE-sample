@@ -1,0 +1,89 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WaterBillingApp.LoginPage"
+             BackgroundColor="White">
+
+    <VerticalStackLayout Padding="30" Spacing="15" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="400">
+
+        <!-- Title -->
+        <Label Text="Welcome Back"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Start" />
+
+        <Label Text="Login to access your account"
+               FontSize="14"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               TextColor="black"  />
+
+        <!-- Role Selection -->
+        <Picker x:Name="LoginAsPicker"
+                Title="Select Login Type"
+                ItemsSource="{Binding LoginTypes}"
+                SelectedIndexChanged="LoginAsPicker_SelectedIndexChanged" />
+
+        <!-- Division Picker (Visible only if Operator is selected) -->
+        <Picker x:Name="DivisionPicker"
+                Title="Select Division"
+                IsVisible="False"
+                ItemsSource="{Binding LoginDivisions}" />
+
+        <!-- Username -->
+        <Entry x:Name="UsernameEntry"
+               Placeholder="Username"
+               Keyboard="Email" PlaceholderColor="Black"/>
+
+        <!-- Password -->
+        <Entry x:Name="PasswordEntry"
+               Placeholder="Password"
+               IsPassword="True" PlaceholderColor="Black"/>
+
+        <!-- Remember Me Checkbox -->
+        <StackLayout Orientation="Horizontal" Spacing="10">
+            <CheckBox x:Name="RememberMeCheckBox"/>
+            <Label Text="Remember me" VerticalOptions="Center" />
+        </StackLayout>
+
+        <!-- Forgot Password Link -->
+        <Label Text="Forgot password?"
+       TextColor="RoyalBlue"
+       HorizontalOptions="End">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnForgotPasswordTapped" />
+            </Label.GestureRecognizers>
+        </Label>
+
+        <!-- Login Button -->
+        <Button Text="Login"
+                Clicked="OnLoginClicked"
+                BackgroundColor="DarkBlue"
+                TextColor="White"
+                CornerRadius="5" />
+
+        <Label Text="First time user? Register here"
+       TextColor="RoyalBlue"
+       HorizontalOptions="Center">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnRegisterTapped" />
+            </Label.GestureRecognizers>
+            </Label>
+
+
+            <!-- Apply for New Connection Button -->
+        <Button Text="Apply for New Connection"
+                BackgroundColor="DarkBlue"
+                TextColor="White"
+                CornerRadius="5" />
+        <ActivityIndicator x:Name="LoginLoader"
+                   IsRunning="False"
+                   IsVisible="False"
+                   Color="DarkBlue"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   WidthRequest="50"
+                   HeightRequest="50" />
+    </VerticalStackLayout>
+
+</ContentPage>

@@ -1,0 +1,74 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WaterBillingApp.MainLayoutPage"
+             BackgroundColor="White">
+
+    <Grid RowDefinitions="Auto, *" ColumnDefinitions="Auto, *">
+
+        <!-- Header -->
+        <StackLayout Grid.Row="0" Grid.ColumnSpan="2"
+                     BackgroundColor="Gray"
+                     Padding="10"
+                     Orientation="Horizontal"
+                     VerticalOptions="Center">
+
+            <!-- Sidebar Toggle Button -->
+            <Button Text="☰"
+                    Clicked="OnToggleSidebarClicked"
+                    BackgroundColor="Transparent"
+                    TextColor="White"
+                    FontSize="20"
+                    WidthRequest="40"
+                    HeightRequest="40"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center" />
+
+            <!-- Page Title -->
+            <Label Text="Water Billing System"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="Center"
+                   TextColor="White"
+                   FontSize="20"
+                   FontAttributes="Bold" />
+
+            <!-- Role Label --><!--
+            <Label x:Name="RoleLabel"
+                   FontAttributes="Italic"
+                   FontSize="14"
+                   TextColor="White"
+                   VerticalOptions="Center"
+                   HorizontalOptions="End" />-->
+            <HorizontalStackLayout VerticalOptions="Center" Spacing="5">
+                <Label Text="🔓"
+       FontSize="14"
+       VerticalOptions="Center"
+       TextColor="White" />
+                <Button Text="Logout"
+                Clicked="OnLogoutClicked"
+                BackgroundColor="Transparent"
+                TextColor="White"
+                FontSize="14"
+                VerticalOptions="Center"
+                Padding="0"
+                />
+            </HorizontalStackLayout>
+        </StackLayout>
+
+        <!-- Sidebar -->
+        <StackLayout x:Name="Sidebar" Grid.Row="1" Grid.Column="0" BackgroundColor="#f0f0f0" WidthRequest="200" Padding="10">
+            <CollectionView x:Name="SidebarMenu">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Button Text="{Binding Title}" Command="{Binding NavigateCommand}" Margin="0,5" />
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+
+        <!-- Main Content Area -->
+        <ContentView x:Name="MainContentArea"
+                     Grid.Row="1"
+                     Grid.Column="1"
+                     BackgroundColor="White" />
+    </Grid>
+</ContentPage>

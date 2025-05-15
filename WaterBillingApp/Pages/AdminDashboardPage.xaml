@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WaterBillingApp.Pages.AdminDashboardPage"
+             Title="Admin Dashboard"
+             BackgroundColor="#f2f2f2">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <!-- Page Title -->
+            <Label Text="📊 Admin Dashboard"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#2c3e50" />
+
+            <!-- FlexLayout Cards -->
+            <FlexLayout Wrap="Wrap"
+                        Direction="Row"
+                        JustifyContent="SpaceBetween"
+                        AlignItems="Start"
+                        AlignContent="Start"
+                       
+                        Margin="0,10,0,0"
+                        >
+
+                <!-- Each Frame acts as a Card -->
+                <Frame BackgroundColor="White"
+                       CornerRadius="12"
+                       Padding="15"
+                       Margin="5"
+                       HasShadow="True"
+                       WidthRequest="160"
+                       HeightRequest="110">
+                    <VerticalStackLayout>
+                        <Label Text="👥 Consumers"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="#007AFF" />
+                        <Label Text="1,200"
+                               FontSize="24"
+                               FontAttributes="Bold"
+                               TextColor="#2c3e50" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="White"
+                       CornerRadius="12"
+                       Padding="15"
+                       Margin="5"
+                       HasShadow="True"
+                       WidthRequest="160"
+                       HeightRequest="110">
+                    <VerticalStackLayout>
+                        <Label Text="🔌 Active Connections"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="#28a745" />
+                        <Label Text="980"
+                               FontSize="24"
+                               FontAttributes="Bold"
+                               TextColor="#2c3e50" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="White"
+                       CornerRadius="12"
+                       Padding="15"
+                       Margin="5"
+                       HasShadow="True"
+                       WidthRequest="160"
+                       HeightRequest="110">
+                    <VerticalStackLayout>
+                        <Label Text="💰 Revenue (Month)"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="#f39c12" />
+                        <Label Text="₹ 5,43,000"
+                               FontSize="24"
+                               FontAttributes="Bold"
+                               TextColor="#2c3e50" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="White"
+                       CornerRadius="12"
+                       Padding="15"
+                       Margin="5"
+                       HasShadow="True"
+                       WidthRequest="160"
+                       HeightRequest="110">
+                    <VerticalStackLayout>
+                        <Label Text="📬 Pending Approvals"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="#e74c3c" />
+                        <Label Text="23"
+                               FontSize="24"
+                               FontAttributes="Bold"
+                               TextColor="#2c3e50" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="White"
+                       CornerRadius="12"
+                       Padding="15"
+                       Margin="5"
+                       HasShadow="True"
+                       WidthRequest="160"
+                       HeightRequest="110">
+                    <VerticalStackLayout>
+                        <Label Text="🛠️ Complaints"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="#9b59b6" />
+                        <Label Text="47"
+                               FontSize="24"
+                               FontAttributes="Bold"
+                               TextColor="#2c3e50" />
+                    </VerticalStackLayout>
+                </Frame>
+
+            </FlexLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WaterBillingApp.Pages.OperatorDashboardPage"
+             Title="Operator Dashboard"
+             BackgroundColor="#f4f4f4">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+            <Label Text="Operator Dashboard"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#2E86C1" />
+
+            <Grid ColumnDefinitions="*,*" 
+                  RowDefinitions="Auto, Auto" 
+                  RowSpacing="15" 
+                  ColumnSpacing="15">
+
+                <!-- Total Consumers -->
+                <Frame BackgroundColor="White" CornerRadius="10" Padding="15" HasShadow="True" Grid.Row="0" Grid.Column="0">
+                    <VerticalStackLayout>
+                        <Label Text="👥 Total Consumers" FontAttributes="Bold" FontSize="16" TextColor="#333" />
+                        <Label Text="1,250" FontSize="24" FontAttributes="Bold" TextColor="#2980B9" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Today's Meter Readings -->
+                <Frame BackgroundColor="White" CornerRadius="10" Padding="15" HasShadow="True" Grid.Row="0" Grid.Column="1">
+                    <VerticalStackLayout>
+                        <Label Text="📟 Today's Meter Readings" FontAttributes="Bold" FontSize="16" TextColor="#333" />
+                        <Label Text="180" FontSize="24" FontAttributes="Bold" TextColor="#27AE60" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Pending Bills -->
+                <Frame BackgroundColor="White" CornerRadius="10" Padding="15" HasShadow="True" Grid.Row="1" Grid.Column="0">
+                    <VerticalStackLayout>
+                        <Label Text="💸 Pending Bills" FontAttributes="Bold" FontSize="16" TextColor="#333" />
+                        <Label Text="320" FontSize="24" FontAttributes="Bold" TextColor="#E67E22" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Complaints Raised -->
+                <Frame BackgroundColor="White" CornerRadius="10" Padding="15" HasShadow="True" Grid.Row="1" Grid.Column="1">
+                    <VerticalStackLayout>
+                        <Label Text="📢 Complaints Raised" FontAttributes="Bold" FontSize="16" TextColor="#333" />
+                        <Label Text="42" FontSize="24" FontAttributes="Bold" TextColor="#C0392B" />
+                    </VerticalStackLayout>
+                </Frame>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,144 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WaterBillingApp.Pages.ConsumersPage"
+             Title="👥 Consumers"
+             BackgroundColor="#F4F6F7">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="10">
+            <SearchBar Placeholder="Search consumers..." x:Name="ConsumerSearchBar" />
+            <ActivityIndicator x:Name="ConsumerLoader"
+           IsRunning="False"
+           IsVisible="False"
+           Color="DarkBlue"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           WidthRequest="50"
+           HeightRequest="50" />
+            <CollectionView x:Name="ConsumersCollectionView"
+                            ItemsSource="{Binding Consumers}"
+                            SelectionMode="Single">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Margin="10"
+                               Padding="15"
+                               CornerRadius="15"
+                               HasShadow="True"
+                               BackgroundColor="White">
+                            <VerticalStackLayout Spacing="12">
+
+                                <!-- Header Row -->
+                                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="15">
+                                    <!-- Image -->
+                                    <Image Source="dummy.png"
+                                           WidthRequest="60"
+                                           HeightRequest="60"
+                                           Aspect="AspectFill"
+                                           VerticalOptions="Center"
+                                           Margin="0"
+                                           Grid.Column="0" />
+
+                                    <!-- Name -->
+                                    <HorizontalStackLayout Grid.Column="1"
+                                                           VerticalOptions="Center">
+                                        <Label Text="{Binding FirstName}"
+                                               FontSize="18"
+                                               FontAttributes="Bold"
+                                               TextColor="#154360" />
+                                        <Label Text=" " />
+                                        <Label Text="{Binding LastName}"
+                                               FontSize="18"
+                                               FontAttributes="Bold"
+                                               TextColor="#154360" />
+                                    </HorizontalStackLayout>
+
+                                    <!-- Occupation -->
+                                    <HorizontalStackLayout Grid.Column="2"
+                                                           VerticalOptions="Center">
+                                        <Label Text="💼" 
+                                               FontSize="14" 
+                                               VerticalOptions="Center" 
+                                               TextColor="#7B7D7D" />
+                                        <Label Text="{Binding Occupations}"
+                                               FontSize="14"
+                                               TextColor="#7B7D7D"
+                                               Margin="5,0,0,0" />
+                                    </HorizontalStackLayout>
+                                </Grid>
+
+                                <!-- Contact Info -->
+                                <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto" RowSpacing="5">
+                                    <HorizontalStackLayout Grid.Row="0" Grid.Column="0" Spacing="15">
+                                        <!-- Mobile -->
+                                        <Label Text="📱" 
+                                               FontSize="14" 
+                                               VerticalOptions="Center" 
+                                               TextColor="Black" />
+                                        <Label Text="{Binding Mobile}"
+                                               FontSize="14"
+                                               TextColor="Black"
+                                               Margin="5,0,0,0"
+                                               VerticalOptions="Center" />
+                                    </HorizontalStackLayout>
+
+                                    <HorizontalStackLayout Grid.Row="1" Grid.Column="0" Spacing="15">
+                                        <!-- Email -->
+                                        <Label Text="✉️" 
+                                               FontSize="14" 
+                                               VerticalOptions="Center" 
+                                               TextColor="#1A5276" />
+                                        <Label Text="{Binding Email}"
+                                               FontSize="14"
+                                               TextColor="#1A5276"
+                                               Margin="5,0,0,0"
+                                               VerticalOptions="Center" />
+                                    </HorizontalStackLayout>
+                                </Grid>
+
+                                <!-- Address -->
+                                <HorizontalStackLayout>
+                                    <Label Text="🏠" 
+                                           FontSize="14" 
+                                           VerticalOptions="Center" 
+                                           TextColor="#616A6B" />
+                                    <Label Text="{Binding Address}"
+                                           FontSize="14"
+                                           TextColor="#616A6B"
+                                           Margin="5,0,0,0"
+                                           LineBreakMode="WordWrap" />
+                                </HorizontalStackLayout>
+
+                                <!-- Status and PaymentType -->
+                                <HorizontalStackLayout Spacing="15">
+                                    <Label Text="✅" 
+                                           FontSize="14" 
+                                           VerticalOptions="Center" 
+                                           TextColor="Green" />
+                                    <Label Text="{Binding Status}"
+                                           FontSize="14"
+                                           TextColor="Green" />
+                                </HorizontalStackLayout>
+
+                                <!-- Action Buttons -->
+                                <HorizontalStackLayout HorizontalOptions="End">
+                                    <Button Text="Edit"
+                                            BackgroundColor="#3498DB"
+                                            TextColor="White"
+                                            CornerRadius="10" />
+                                    <Button Text="Delete"
+                                            BackgroundColor="Red"
+                                            TextColor="White"
+                                            CornerRadius="10"
+                                            Margin="10,0,0,0" />
+                                </HorizontalStackLayout>
+
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
