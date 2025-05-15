@@ -51,5 +51,6 @@ Authentication: Role-based access handling in-app (JWT/Identity can be added)
 <img width="251" alt="image" src="https://github.com/user-attachments/assets/4d2608f3-edaa-48c3-8c4f-aa5390f47445" />
 <img width="244" alt="image" src="https://github.com/user-attachments/assets/1ec610ee-12eb-429f-99ca-979701258f84" />
 <img width="235" alt="image" src="https://github.com/user-attachments/assets/8507d895-5fd6-4609-a052-12e28a0a7426" />
-<img width="245" alt="image" src="https://github.com/user-attachments/assets/49b4b20c-8637-4e1d-b71c-0972e9381bd1" />
+ <img width="245" alt="image" src="https://github.com/user-attachments/assets/16b073ac-9368-4ea2-9cba-9d7ce11421c7" />
+
  
