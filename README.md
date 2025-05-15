@@ -1,7 +1,5 @@
 # MAUI-with-.NET-CORE-sample
-
-# MAUI-with-.NET-CORE-sample-
-
+ 
 **Water Billing System – .NET MAUI App**
 This is a cross-platform Water Billing System application developed using .NET MAUI. It is designed to help water departments manage consumer data, generate bills, and track payments efficiently. The app includes role-based access control to ensure that each user can only access the pages relevant to their responsibilities.
 
