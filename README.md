@@ -45,12 +45,19 @@ Database: SQLite / SQL Server
 
 Authentication: Role-based access handling in-app (JWT/Identity can be added)
 
-<img width="248" alt="image" src="https://github.com/user-attachments/assets/cae84946-edd3-4447-bf82-def536f53dfb" />
-<img width="248" alt="image" src="https://github.com/user-attachments/assets/0cd75a61-eef4-41a9-9911-c97e433d2d14" />
-<img width="245" alt="image" src="https://github.com/user-attachments/assets/18b3433b-3bbd-425a-b68c-c3803ffddf28" />
-<img width="251" alt="image" src="https://github.com/user-attachments/assets/4d2608f3-edaa-48c3-8c4f-aa5390f47445" />
-<img width="244" alt="image" src="https://github.com/user-attachments/assets/1ec610ee-12eb-429f-99ca-979701258f84" />
-<img width="235" alt="image" src="https://github.com/user-attachments/assets/8507d895-5fd6-4609-a052-12e28a0a7426" />
- <img width="245" alt="image" src="https://github.com/user-attachments/assets/16b073ac-9368-4ea2-9cba-9d7ce11421c7" />
+<img width="247" alt="image" src="https://github.com/user-attachments/assets/7a8853d7-bdc0-4471-b9d2-3af4935fa5dc" />
+<img width="260" alt="image" src="https://github.com/user-attachments/assets/b454648d-ea3b-42c2-b3f7-d96b7240a70a" />
+<img width="244" alt="image" src="https://github.com/user-attachments/assets/5064d426-f00b-41d9-aacd-8c1ba955b779" />
+<img width="259" alt="image" src="https://github.com/user-attachments/assets/b6132bd9-34e7-4c29-a830-d968287fea3d" />
+<img width="259" alt="image" src="https://github.com/user-attachments/assets/e1a04dfb-bcf2-4c64-9d14-750341e0defe" />
+<img width="259" alt="image" src="https://github.com/user-attachments/assets/d8e38f36-b4d9-4a53-8a42-5b03214c1f89" />
+<img width="257" alt="image" src="https://github.com/user-attachments/assets/78414abc-0568-44ce-a34e-bb051af33e43" />
+
+
+
+
+
+
+
 
  
